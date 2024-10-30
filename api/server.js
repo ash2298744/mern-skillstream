@@ -23,7 +23,7 @@ const connect  = async () => {
     }
 }
 
-app.use(cors({ origin: process.env.VITE_PROD_BASE_URL, credentials: true }));
+app.use(cors({ origin: "https://mern-skillstream.vercel.app", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
